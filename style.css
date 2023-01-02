@@ -1,0 +1,452 @@
+body {
+  background-image: url("assets/3.png");
+  background-color: rgb(28, 36, 48);
+  /* width: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.topbar {
+  height: 8.3vw;
+  /* background-color: aliceblue; */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0vw;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+.topbar:hover {
+  height: 8.3vw;
+  /* background-color: aliceblue; */
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0vw;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.logo {
+  margin-top: -0.8vw;
+  margin-left: 5.2vw;
+  width: 18vw;
+}
+
+.mimg {
+  padding-left: 1vw;
+  width: 40vw;
+}
+
+.topbtn {
+  margin-top: -7.6%;
+  margin-left: 80%;
+  display: block;
+}
+
+/* .topbtnin {
+  color: white;
+  background-color: rgb(81, 0, 108);
+  background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210));
+  font-size: 1.6vw;
+  border-radius: 3vw;
+  border: 0;
+  padding: 1vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  box-shadow: 2px 2px 2px teal;
+  text-shadow: 2px 2px 2px teal;
+} */
+
+.topbtnin {
+  color: white;
+  background-color: rgb(81, 0, 108, 0);
+  /* background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210)); */
+  font-size: 1.8vw;
+  border: 0;
+  padding: 1vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  text-shadow: 2px 2px 2px purple;
+}
+
+.topbtnin:hover {
+  color: white;
+  font-size: 1.8vw;
+  border: 0;
+  padding: 1vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  text-shadow: 2px 2px 12px white;
+}
+
+.text {
+  font-family: "Roboto Mono", monospace;
+  font-size: 4.2vw;
+  color: white;
+  margin-top: -32vw;
+  padding-left: 42vw;
+}
+
+.para {
+  font-family: "Roboto Mono", monospace;
+  display: block;
+  color: white;
+  font-size: 1.8vw;
+  padding-left: 42vw;
+  margin-top: -2vw;
+}
+
+.para2 {
+  font-family: "Caveat", cursive;
+  display: inline;
+  background: -webkit-linear-gradient(rgb(96, 210, 210), violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3svw;
+  margin-top: -2vw;
+}
+
+.container {
+  display: inline-block;
+}
+.typed-out {
+  overflow: hidden;
+  border-right: 0.6vw solid rgb(245, 245, 245, 1);
+  white-space: nowrap;
+  animation: typing 2s steps(50, end) forwards;
+  font-size: 4.2vw;
+  width: 0;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 48%;
+  }
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* --------------------------------------------------- */
+
+.cardCB {
+  color: white;
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 2px purple;
+  margin-left: 42vw;
+  margin-top: 1.2vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5vw;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.cardCB:hover {
+  color: white;
+  font-size: 1.5vw;
+  text-shadow: 2px 2px 12px white;
+  margin-left: 42vw;
+  margin-top: 1.2vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5vw;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+#cardCT {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5vw;
+  color: white;
+  margin-top: -3.6vw;
+  padding-left: 44vw;
+  text-shadow: 2px 2px 2px purple;
+}
+
+#cardCT:hover {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5vw;
+  color: white;
+  margin-top: -3.6vw;
+  padding-left: 44vw;
+  text-shadow: 2px 2px 12px white;
+}
+
+.secondS {
+  margin-top: 16vw;
+  background-color: rgb(28, 36, 48);
+  width: 100%;
+  border-top: 0.1vw solid rgb(255, 255, 255, 0.2);
+  height: 795px;
+}
+/* ----------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url("assets/3.png");
+    background-color: rgb(28, 36, 48);
+    /* width: 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .topbar {
+    height: 10vw;
+    /* background-color: aliceblue; */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0vw;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+  }
+  .topbar:hover {
+    height: 8.3vw;
+    /* background-color: aliceblue; */
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0vw;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .logo {
+    margin-top: -0.3vw;
+    display: block;
+    margin-left: 6.5vw;
+    margin-right: auto;
+    width: 19%;
+  }
+
+  .mimg {
+    /* padding-left: 1vw; */
+    display: block;
+    margin-top: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
+  .topbtn {
+    margin-top: -7.6%;
+    margin-left: 80%;
+    display: block;
+  }
+
+  /* .topbtnin {
+    color: white;
+    background-color: rgb(81, 0, 108);
+    background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210));
+    font-size: 1.6vw;
+    border-radius: 3vw;
+    border: 0;
+    padding: 1vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    box-shadow: 2px 2px 2px teal;
+    text-shadow: 2px 2px 2px teal;
+  } */
+
+  .topbtnin {
+    color: white;
+    background-color: rgb(81, 0, 108, 0);
+    /* background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210)); */
+    font-size: 1.8vw;
+    border: 0;
+    padding: 1vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-shadow: 2px 2px 2px purple;
+  }
+
+  .topbtnin:hover {
+    color: white;
+    font-size: 1.8vw;
+    border: 0;
+    padding: 1vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-shadow: 2px 2px 12px white;
+  }
+
+  .text {
+    font-family: "Roboto Mono", monospace;
+    font-size: 5vw;
+    color: white;
+    margin-top: -100vw;
+    /* display: block; */
+    margin-left: -15vw;
+    margin-right: auto;
+  }
+
+  .para {
+    font-family: "Roboto Mono", monospace;
+    display: block;
+    color: white;
+    font-size: 2vw;
+    padding-left: 42vw;
+    margin-top: -2vw;
+    margin-left: -15vw;
+    margin-right: 13vw;
+  }
+
+  .para2 {
+    font-family: "Caveat", cursive;
+    display: inline;
+    background: -webkit-linear-gradient(rgb(96, 210, 210), violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3svw;
+    margin-top: -2vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    display: inline-block;
+  }
+  .typed-out {
+    overflow: hidden;
+    border-right: 0.6vw solid rgb(245, 245, 245, 1);
+    white-space: nowrap;
+    animation: typing 2s steps(50, end) forwards;
+    font-size: 4.2vw;
+    width: 0;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 48%;
+    }
+  }
+
+  /* --------------------------------------------------- */
+
+  .cardCB {
+    color: white;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 2px purple;
+    margin-left: 27vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .cardCB:hover {
+    color: white;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 2px purple;
+    margin-left: 27vw;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  #cardCT {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5vw;
+    color: white;
+    margin-top: -3.6vw;
+    padding-left: 44vw;
+    text-shadow: 2px 2px 2px purple;
+  }
+
+  #cardCT:hover {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.5vw;
+    color: white;
+    margin-top: -3.6vw;
+    padding-left: 44vw;
+    text-shadow: 2px 2px 12px white;
+  }
+
+  .secondS {
+    /* margin-top: 16vw; */
+    background-color: rgb(28, 36, 48);
+    width: 100%;
+    border-top: 0.1vw solid rgb(255, 255, 255, 0.2);
+    height: 795px;
+  }
+}
