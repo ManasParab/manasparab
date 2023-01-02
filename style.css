@@ -2,9 +2,13 @@ body {
   background-image: url("assets/3.png");
   background-color: rgb(28, 36, 48);
   /* width: 100%; */
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   margin: 0;
+}
+.anchor {
+  text-decoration: none;
+  display: inline;
 }
 
 .topbar {
@@ -35,8 +39,27 @@ body {
 }
 
 .mimg {
-  padding-left: 1vw;
-  width: 40vw;
+  /* padding-left: 1vw; */
+  display: block;
+  margin-top: -32vw;
+  margin-left: 4vw;
+  width: 38vw;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .topbtn {
@@ -85,7 +108,7 @@ body {
   font-family: "Roboto Mono", monospace;
   font-size: 4.2vw;
   color: white;
-  margin-top: -32vw;
+  margin-top: 10vw;
   padding-left: 42vw;
 }
 
@@ -128,35 +151,15 @@ body {
   }
 }
 
-.floating {
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 15px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
 /* --------------------------------------------------- */
 
 .cardCB {
+  display: block;
   color: white;
   font-size: 1.5vw;
   text-shadow: 2px 2px 2px purple;
   margin-left: 42vw;
-  margin-top: 1.2vw;
+  margin-top: 1.8vw;
   padding-bottom: 1vw;
   padding-top: 1vw;
   padding-left: 1.2vw;
@@ -222,16 +225,15 @@ body {
 /* ----------------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
   body {
-    background-image: url("assets/3.png");
+    background-image: url("assets/4.png");
     background-color: rgb(28, 36, 48);
-    /* width: 100%; */
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin: 0;
   }
 
   .topbar {
-    height: 10vw;
+    height: 20vw;
     /* background-color: aliceblue; */
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -253,19 +255,17 @@ body {
 
   .logo {
     margin-top: -0.3vw;
-    display: block;
-    margin-left: 6.5vw;
-    margin-right: auto;
-    width: 19%;
+    margin-left: 10vw;
+    width: 37.5%;
   }
 
   .mimg {
     /* padding-left: 1vw; */
     display: block;
-    margin-top: 45vw;
+    margin-top: 9vw;
     margin-left: auto;
     margin-right: auto;
-    width: 60vw;
+    width: 80vw;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -285,9 +285,7 @@ body {
   }
 
   .topbtn {
-    margin-top: -7.6%;
-    margin-left: 80%;
-    display: block;
+    text-decoration: none;
   }
 
   /* .topbtnin {
@@ -305,14 +303,18 @@ body {
   } */
 
   .topbtnin {
+    text-decoration: none;
+    display: block;
     color: white;
     background-color: rgb(81, 0, 108, 0);
     /* background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210)); */
-    font-size: 1.8vw;
+    font-size: 4vw;
     border: 0;
     padding: 1vw;
     padding-left: 4vw;
     padding-right: 4vw;
+    margin-left: -14vw;
+    margin-top: -14vw;
     text-shadow: 2px 2px 2px purple;
   }
 
@@ -326,14 +328,32 @@ body {
     text-shadow: 2px 2px 12px white;
   }
 
+  .firstS {
+    margin-top: 2vw;
+  }
+
   .text {
     font-family: "Roboto Mono", monospace;
-    font-size: 8vw;
     color: white;
-    margin-top: -100vw;
+    margin-top: 10vw;
     /* display: block; */
-    margin-left: -25vw;
+    margin-left: -32.5vw;
     margin-right: auto;
+
+    overflow: hidden;
+    border-right: 0.6vw solid rgb(245, 245, 245, 1);
+    white-space: nowrap;
+    animation: typing 2s steps(50, end) forwards;
+    font-size: 8vw;
+    width: 0;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
   }
 
   .para {
@@ -342,18 +362,19 @@ body {
     color: white;
     font-size: 3vw;
     padding-left: 42vw;
-    margin-top: -2vw;
-    margin-left: -25vw;
-    margin-right: 10vw;
+    margin-top: -3vw;
+    margin-left: -32.5vw;
+    margin-right: 5vw;
   }
 
   .para2 {
+    font-size:20vw;
     font-family: "Caveat", cursive;
     display: inline;
     background: -webkit-linear-gradient(rgb(96, 210, 210), violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3svw;
+    font-size: 5vw;
     margin-top: -2vw;
     margin-left: auto;
     margin-right: auto;
@@ -362,49 +383,33 @@ body {
   .container {
     display: inline-block;
   }
-  .typed-out {
-    overflow: hidden;
-    border-right: 0.6vw solid rgb(245, 245, 245, 1);
-    white-space: nowrap;
-    animation: typing 2s steps(50, end) forwards;
-    font-size: 4.2vw;
-    width: 0;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 48%;
-    }
-  }
 
   /* --------------------------------------------------- */
 
   .cardCB {
     color: white;
-    font-size: 1.5vw;
+    font-size: 3vw;
     text-shadow: 2px 2px 2px purple;
-    margin-left: 27vw;
-    margin-top: 1vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
+    margin-left: 9.7vw;
+    margin-top: 4.8vw;
+    padding-bottom: 1.4vw;
+    padding-top: 1.4vw;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5vw;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.14);
   }
   .cardCB:hover {
     color: white;
-    font-size: 1.5vw;
-    text-shadow: 2px 2px 2px purple;
-    margin-left: 27vw;
-    margin-top: 1vw;
+    font-size: 2vw;
+    text-shadow: 2px 2px 12px white;
+    margin-left: 17.4vw;
+    margin-top: 1.2vw;
     padding-bottom: 1vw;
     padding-top: 1vw;
     padding-left: 1.2vw;
@@ -412,7 +417,7 @@ body {
     /* From https://css.glass */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5vw;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.14);
@@ -423,7 +428,7 @@ body {
     font-weight: bold;
     display: block;
     font-family: "Roboto Mono", monospace;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color: white;
     margin-top: -3.6vw;
     padding-left: 44vw;
