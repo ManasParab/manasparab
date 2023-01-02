@@ -328,11 +328,11 @@ body {
 
   .text {
     font-family: "Roboto Mono", monospace;
-    font-size: 5vw;
+    font-size: 8vw;
     color: white;
     margin-top: -100vw;
     /* display: block; */
-    margin-left: -15vw;
+    margin-left: -25vw;
     margin-right: auto;
   }
 
@@ -340,11 +340,11 @@ body {
     font-family: "Roboto Mono", monospace;
     display: block;
     color: white;
-    font-size: 2vw;
+    font-size: 3vw;
     padding-left: 42vw;
     margin-top: -2vw;
-    margin-left: -15vw;
-    margin-right: 13vw;
+    margin-left: -25vw;
+    margin-right: 10vw;
   }
 
   .para2 {
