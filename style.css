@@ -243,7 +243,7 @@ body {
     -webkit-backdrop-filter: blur(1px);
   }
   .topbar:hover {
-    height: 8.3vw;
+    height: 20vw;
     /* background-color: aliceblue; */
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
@@ -319,12 +319,18 @@ body {
   }
 
   .topbtnin:hover {
+    text-decoration: none;
+    display: block;
     color: white;
-    font-size: 1.8vw;
+    background-color: rgb(81, 0, 108, 0);
+    /* background-image: linear-gradient(to bottom right, violet, rgb(96, 210, 210)); */
+    font-size: 4vw;
     border: 0;
     padding: 1vw;
     padding-left: 4vw;
     padding-right: 4vw;
+    margin-left: -14vw;
+    margin-top: -14vw;
     text-shadow: 2px 2px 12px white;
   }
 
@@ -368,7 +374,7 @@ body {
   }
 
   .para2 {
-    font-size:20vw;
+    font-size: 20vw;
     font-family: "Caveat", cursive;
     display: inline;
     background: -webkit-linear-gradient(rgb(96, 210, 210), violet);
@@ -389,7 +395,25 @@ body {
   .cardCB {
     color: white;
     font-size: 3vw;
-    text-shadow: 2px 2px 2px purple;
+    text-shadow: 1px 1px 2px purple;
+    margin-left: 9.7vw;
+    margin-top: 4.8vw;
+    padding-bottom: 1.4vw;
+    padding-top: 1.4vw;
+    padding-left: 1.8vw;
+    padding-right: 1.8vw;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5vw;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .cardCB:hover {
+    color: white;
+    font-size: 3vw;
+    text-shadow: 2px 2px 12px white;
     margin-left: 9.7vw;
     margin-top: 4.8vw;
     padding-bottom: 1.4vw;
@@ -403,48 +427,6 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.14);
-  }
-  .cardCB:hover {
-    color: white;
-    font-size: 2vw;
-    text-shadow: 2px 2px 12px white;
-    margin-left: 17.4vw;
-    margin-top: 1.2vw;
-    padding-bottom: 1vw;
-    padding-top: 1vw;
-    padding-left: 1.2vw;
-    padding-right: 1.2vw;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5vw;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-  }
-
-  #cardCT {
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    font-family: "Roboto Mono", monospace;
-    font-size: 2vw;
-    color: white;
-    margin-top: -3.6vw;
-    padding-left: 44vw;
-    text-shadow: 2px 2px 2px purple;
-  }
-
-  #cardCT:hover {
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    font-family: "Roboto Mono", monospace;
-    font-size: 1.5vw;
-    color: white;
-    margin-top: -3.6vw;
-    padding-left: 44vw;
-    text-shadow: 2px 2px 12px white;
   }
 
   .secondS {
